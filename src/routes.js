@@ -31,7 +31,11 @@ import React from 'react';
 const Courses = React.lazy(() => import('./components/Courses'));
 const VideoPlayer = React.lazy(() => import('./components/VideoPlayer'));
 const Home = React.lazy(() => import('./components/Home'));
-// const FileDownloader = React.lazy(() => import('./components/FileDownloader'));
+
+const Gallery = React.lazy(() => import('./components/Gallery'));
+const About = React.lazy(() => import('./components/About'));
+const Contact = React.lazy(() => import('./components/Contact'));
+
 // const Courses = React.lazy(() => import('./components/Courses'));
 // const CoreUIIcons = React.lazy(() => import('./views/icons/coreui-icons/CoreUIIcons'));
 // const Flags = React.lazy(() => import('./views/icons/flags/Flags'));
@@ -51,7 +55,9 @@ const routes = [
   { path: '/courses', name: 'Courses', component: Courses },
  
   { path: '/videocorner', name: 'VideoCorner', component:  VideoPlayer},
-  // { path: '/gallery', name: 'gallery', component:   FileDownloader}
+  { path: '/gallery', name: 'gallery', component:   Gallery},
+  { path: '/about', name: 'about', component:   About},
+  { path: '/contact', name: 'about', component:   Contact}
   // { path: '/courses', name: 'Courses', component:  Courses},
  /* { path: '/navbar', name: 'Dashboard', component: Navbar },
   { path: '/theme', name: 'Theme', component: Colors, exact: true },

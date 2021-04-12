@@ -62,9 +62,9 @@ const TheHeader = () => {
               <CDropdownItem to="/courses">MSCIT</CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
-          <CNavLink>Gallery</CNavLink>
-          <CNavLink>About Us</CNavLink>
-          <CNavLink>Contact Us</CNavLink>
+          <CNavLink to="/gallery">Gallery</CNavLink>
+          <CNavLink to="/about">About Us</CNavLink>
+          <CNavLink to="/contact">Contact Us</CNavLink>
           </CNavbarNav>
           <CNavbarNav className="ml-auto">
             

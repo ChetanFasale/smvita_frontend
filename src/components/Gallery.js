@@ -7,7 +7,7 @@ import  styled  from  'styled-components';
 import 'react-bnb-gallery/dist/style.css'
 const files = [
   {
-    name: "Photo 1",
+    name: "Kids",
     thumb:
       "https://images.unsplash.com/photo-1604263439201-171fb8c0fddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=427&q=80 427w",
     file:
@@ -16,7 +16,7 @@ const files = [
     filename: "photo-1.jpg",
   },
   {
-    name: "Photo 2",
+    name: "Comrades",
     thumb:
       "https://images.unsplash.com/photo-1604164388977-1b6250ef26f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80 401w",
     file:
@@ -25,7 +25,7 @@ const files = [
     filename: "photo-2.jpg",
   },
   {
-    name: "Photo 3",
+    name: "E-Vengers",
     thumb:
       "https://images.unsplash.com/photo-1604264849633-67b1ea2ce0a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80 750w",
     file:
@@ -35,8 +35,8 @@ const files = [
   },
 ];
 
-const FileDownloader = () => {
-
+const Gallery = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
 
 
@@ -46,48 +46,50 @@ const FileDownloader = () => {
     'https://picsum.photos/id/1015/1000/600/'
   ];
 
-  const Wrapper = styled.div`
-  &:hover a {
-    display: none;
-  }
-`
 
-return (
-  <>
+  
 
 
-    <div className="row">
-      <div className="col text-center">
-        <h2>Image Gallery</h2>
-        <div className="row mt-3">
-          {files.map((file, idx) => (
-            <div className="col" key={idx}>
-              <div className="card ">
-                <div className="card-body" key={idx}>
-                  <a onClick={() => setIsOpen(true)}>
-                    <img className="card-img-top mb-3" src={file.thumb} />
-                  </a>
-                  <ReactBnbGallery
-                    show={isOpen}
-                    photos={images}
-                    onClose={() => setIsOpen(false)}
-                  />
-                  <h5 className="card-title">{file.name}</h5>
+  return (
+    <>
 
 
+      <div className="row">
+        <div className="col text-center">
+          <h2>Image Gallery</h2>
+          <div className="row mt-3">
+            {files.map((file, idx) => (
+              <div className="col" key={idx}>
+                <div className="card ">
+                  <div className="card-body" key={idx}>
+                    <a onClick={() => setIsOpen(true)}>
+                      <img className="card-img-top mb-3" src={file.thumb} />
+                    </a>
+                    <ReactBnbGallery
+                      show={isOpen}
+                      photos={images}
+                      onClose={() => setIsOpen(false)}
+                    />
+                    <h5 className="card-title">{file.name}</h5>
+
+
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        
+        <ReactBnbGallery
+        
+        photo={images}
+       
+      />
       </div>
-
-
-
-    </div>
-
-  </>
-);
+     
+    </>
+  );
 };
 
-export default FileDownloader;
+export default Gallery;

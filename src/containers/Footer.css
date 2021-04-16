@@ -134,3 +134,7 @@
 
 @media screen and (max-width: 768px) {
 }
+
+#address {
+  color: #fff;
+}

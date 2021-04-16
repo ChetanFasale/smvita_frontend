@@ -38,10 +38,8 @@ function TheFooter() {
          
           <div class="footer-link-items">
             <h2>Authorised Training center</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <p id="address">5th Floor, Vidyanidhi Education Complex, Vidyanidhi Road, Juhu Scheme Andheri (W), Mumbai 400 049 India</p>
+        
           </div>
         </div>
       </div>

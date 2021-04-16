@@ -12,23 +12,26 @@ function TheCard() {
           <ul className="cards__items">
             <CardItem
               src="images/3.jpg"
-              text="This includes Core Java and Mobile and Wireless Technologies modules"
-              label="PGDMC"
-              path="/services"
+              text="Post Graduate Diploma in Advanced Computing (PG DAC) grooms
+              engineers and IT professionals for a career in Software
+              Development."
+              label="PG-DAC"
+              path="/courses"
             />
             <CardItem
               src="images/4.png"
-              text="The admission to all PG Courses by
-              C-DAC ACTS is through an All-India
-              C-DAC Common Admission Test"
-              label="Pre CAT"
-              path="/services"
+              text="Post Graduate Diploma in Big Data Analytics (PG DBDA) enables
+              students to explore the fundamental concepts of big data
+              analytics."
+              label="PG-DBDA"
+              path="/courses"
             />
             <CardItem
               src="images/7.jpg"
-              text=" IoT aims to groom the students to enable them to work on current technology scenarios"
-              label="PG DIoT"
-              path="/services"
+              text="The admission to all PG Courses by C-DAC ACTS is through an
+              All-India C-DAC Common Admission Test (C-CAT)"
+              label="PRE-CAT"
+              path="/courses"
             />
           </ul>
         </div>

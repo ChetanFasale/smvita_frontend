@@ -43,7 +43,7 @@ const TheHeader = () => {
   return (
     <CNavbar expandable="sm" color="dark" sticky="true">
       <CToggler inNavbar onClick={() => setIsOpen(!isOpen)} />
-      <CNavbarBrand>SMVITA</CNavbarBrand>
+      <CNavbarBrand><img height="40px" src="/images/smvitaa.png" /></CNavbarBrand>
       <CCollapse show={isOpen} navbar>
         <CNavbarNav>
           <CNavLink to="/">Home</CNavLink>
@@ -59,24 +59,7 @@ const TheHeader = () => {
           <CNavLink to="/about">About Us</CNavLink>
           <CNavLink to="/contact">Contact Us</CNavLink>
         </CNavbarNav>
-        <CNavbarNav className="ml-auto">
-          <CDropdown inNav>
-            <CDropdownToggle>Lang</CDropdownToggle>
-            <CDropdownMenu>
-              <CDropdownItem>EN</CDropdownItem>
-              <CDropdownItem>ES</CDropdownItem>
-              <CDropdownItem>RU</CDropdownItem>
-              <CDropdownItem>FA</CDropdownItem>
-            </CDropdownMenu>
-          </CDropdown>
-          <CDropdown inNav>
-            <CDropdownToggle>User</CDropdownToggle>
-            <CDropdownMenu>
-              <CDropdownItem>Account</CDropdownItem>
-              <CDropdownItem>Settings</CDropdownItem>
-            </CDropdownMenu>
-          </CDropdown>
-        </CNavbarNav>
+        
       </CCollapse>
     </CNavbar>
   );

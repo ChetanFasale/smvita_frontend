@@ -11,13 +11,7 @@ export default class Home extends Component {
     return (
       <div>
         <Carousels />
-<<<<<<< HEAD
-       
         <Cards />
-       
-=======
-        <Cards />
->>>>>>> 2e463fc99271dfc65cbf4949daef2e877e69149f
         <Jumbotrons />
         <Grid />
         <TheFooter />

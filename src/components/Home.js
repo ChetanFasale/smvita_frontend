@@ -5,6 +5,7 @@ import Carousels from "src/containers/Carousel";
 import Grid from "src/containers/Grid";
 import Jumbotrons from "src/containers/Jumbotrons";
 import TheFooter from "src/containers/TheFooter";
+// import Navbar from "src/containers/Navbar";
 
 export default class Home extends Component {
   render() {

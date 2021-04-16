@@ -6,7 +6,7 @@ import TheHeaderDropdownMssg from './TheHeaderDropdownMssg'
 import TheHeaderDropdownNotif from './TheHeaderDropdownNotif'
 import TheHeaderDropdownTasks from './TheHeaderDropdownTasks'
 import TheLayout from './TheLayout'
-import Navbar from './Navbar'
+// import Navbar from './Navbar'
 import TheSidebar from './TheSidebar'
 
 export {
@@ -18,6 +18,5 @@ export {
   TheHeaderDropdownNotif,
   TheHeaderDropdownTasks,
   TheLayout,
-  Navbar
   // TheSidebar
 }

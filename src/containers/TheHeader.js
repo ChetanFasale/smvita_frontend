@@ -23,7 +23,14 @@ import {
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
 import "./navbar.css";
-import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 
 // routes config
 import routes from "../routes";
@@ -34,7 +41,6 @@ const TheHeader = () => {
   const [navbarText, setNavbarText] = useState(false);
 
   return (
-   
     <CNavbar expandable="sm" color="dark" sticky="true">
       <CToggler inNavbar onClick={() => setIsOpen(!isOpen)} />
       <CNavbarBrand>SMVITA</CNavbarBrand>
@@ -55,7 +61,7 @@ const TheHeader = () => {
         </CNavbarNav>
         <CNavbarNav className="ml-auto">
           <CDropdown inNav>
-            <CDropdownToggle >Lang</CDropdownToggle>
+            <CDropdownToggle>Lang</CDropdownToggle>
             <CDropdownMenu>
               <CDropdownItem>EN</CDropdownItem>
               <CDropdownItem>ES</CDropdownItem>
@@ -64,7 +70,7 @@ const TheHeader = () => {
             </CDropdownMenu>
           </CDropdown>
           <CDropdown inNav>
-            <CDropdownToggle >User</CDropdownToggle>
+            <CDropdownToggle>User</CDropdownToggle>
             <CDropdownMenu>
               <CDropdownItem>Account</CDropdownItem>
               <CDropdownItem>Settings</CDropdownItem>
@@ -73,7 +79,6 @@ const TheHeader = () => {
         </CNavbarNav>
       </CCollapse>
     </CNavbar>
- 
   );
 };
 

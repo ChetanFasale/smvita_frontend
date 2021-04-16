@@ -18,9 +18,10 @@ const TheLayout = () => {
     <div >
 
     <div className="wrapper">
-    {/* <TheHeader/> */}
-    <Newnavbar/>
+    <TheHeader/>
+  
     <TheContent/>
+    <TheFooter />
     </div>
     
             

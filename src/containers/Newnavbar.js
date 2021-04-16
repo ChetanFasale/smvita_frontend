@@ -1,15 +1,26 @@
 //rfc
 import React from "react";
-import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from "react-bootstrap";
+import {
+  Navbar,
+  Nav,
+  NavDropdown,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
+import Home from "../components/Home";
+import { Link } from "react-router-dom";
+
 export default function Newnavbar() {
   return (
     <div>
-      <Navbar  sticky="top" variant="dark" bg="dark" expand="lg">
+      <Navbar sticky="top" bg="dark" variant="dark" expand="lg">
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            {/* <Nav.Link href="Home">Home</Nav.Link> */}
+            <Link to="/">Home</Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>

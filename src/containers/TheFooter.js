@@ -11,7 +11,7 @@ function TheFooter() {
         <div className="footer-link-wrapper">
           <div class="footer-link-items">
             <h2>About Us</h2>
-            <Link to="/sign-up">Our Origin</Link>
+            <Link to="/gallery">Our Origin</Link>
             <Link to="/">Testimonials</Link>
             <Link to="/">Careers</Link>
             <Link to="/">Terms of Service</Link>
@@ -25,15 +25,19 @@ function TheFooter() {
           </div>
         </div>
         <div className="footer-link-wrapper">
-          <div class="footer-link-items">
-            <h2>Videos</h2>
-            <Link to="/">Submit Video</Link>
-            <Link to="/">Ambassadors</Link>
-            <Link to="/">Agency</Link>
-            <Link to="/">Influencer</Link>
-          </div>
+         
           <div class="footer-link-items">
             <h2>Social Media</h2>
+            <Link to="/">Instagram</Link>
+            <Link to="/">Facebook</Link>
+            <Link to="/">Youtube</Link>
+            <Link to="/">Twitter</Link>
+          </div>
+        </div>
+        <div className="footer-link-wrapper">
+         
+          <div class="footer-link-items">
+            <h2>Authorised Training center</h2>
             <Link to="/">Instagram</Link>
             <Link to="/">Facebook</Link>
             <Link to="/">Youtube</Link>
@@ -43,12 +47,6 @@ function TheFooter() {
       </div>
       <section class="social-media">
         <div class="social-media-wrap">
-          <div class="footer-logo">
-            <Link to="/" className="social-logo">
-              VITA
-              <i class="fab fa-typo3" />
-            </Link>
-          </div>
           <small class="website-rights">SMVITA © 2021</small>
           <div class="social-icons">
             <Link

@@ -22,7 +22,7 @@ import {
   CImg,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-// import "./navbar.css";
+import "./navbar.css";
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from "react-bootstrap";
 
 // routes config
@@ -34,6 +34,7 @@ const TheHeader = () => {
   const [navbarText, setNavbarText] = useState(false);
 
   return (
+   
     <CNavbar expandable="sm" color="dark" sticky="true">
       <CToggler inNavbar onClick={() => setIsOpen(!isOpen)} />
       <CNavbarBrand>SMVITA</CNavbarBrand>

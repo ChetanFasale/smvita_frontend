@@ -12,13 +12,13 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        {/* <Newnavbar/> */}
+  
         <Carousels />
-        {/* <Cards /> */}
+     
         <TheCard />
         <Jumbotrons />
         <Grid />
-        <TheFooter />
+      
       </div>
     );
   }

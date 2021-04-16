@@ -1,16 +1,4 @@
 import React, { useState } from "react";
-<<<<<<< HEAD
-import { Jumbotron, Button } from "react-bootstrap";
-
-const Jumbotrons = () => {
-  return (
-    <Jumbotron>
-      <img src="" />
-      <p>
-        <Button variant="primary">Learn more</Button>
-      </p>
-    </Jumbotron>
-=======
 import { Jumbotron, Container, Row, Col, Image } from "react-bootstrap";
 
 const Jumbotrons = () => {
@@ -57,7 +45,6 @@ const Jumbotrons = () => {
         </Container>
       </Jumbotron>
     </div>
->>>>>>> 2e463fc99271dfc65cbf4949daef2e877e69149f
   );
 };
 

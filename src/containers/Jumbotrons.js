@@ -4,13 +4,9 @@ import { Jumbotron, Container, Row, Col, Image } from "react-bootstrap";
 const Jumbotrons = () => {
   return (
     <div>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <Jumbotron>
-        <Container>
+      
+      <Jumbotron >
+        <Container >
           <Row>
             <Col>
               <Image

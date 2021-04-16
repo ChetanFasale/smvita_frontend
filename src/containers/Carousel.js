@@ -15,7 +15,7 @@ import {
 import { DocsLink } from 'src/reusable'
 
 const cStyle = {
-  height:"400px"
+  height:"634px"
 };
 const slides = [
   'https://epic-bell-ae26f8.netlify.app/smvita-frontend/assets/img/slide/slide-2.png',
@@ -32,7 +32,7 @@ const Carousel = () => {
     <div>
       <CRow >
         <CCol sm={12}>
-          <CCarousel >
+          <CCarousel style={{ height: 634, width: 1465 }}>
             <CCarouselInner>
               <CCarouselItem style={cStyle}>
                 <img className="d-block w-100" style={cStyle}  src={slides[0]} alt="slide 1" />

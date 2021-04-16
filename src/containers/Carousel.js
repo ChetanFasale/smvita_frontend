@@ -18,8 +18,10 @@ const cStyle = {
   height:"400px"
 };
 const slides = [
-  'https://epic-bell-ae26f8.netlify.app/smvita-frontend/assets/img/slide/slide-1.jpg',
   'https://epic-bell-ae26f8.netlify.app/smvita-frontend/assets/img/slide/slide-2.png',
+  
+  'https://epic-bell-ae26f8.netlify.app/smvita-frontend/assets/img/slide/slide-1.jpg',
+ 
   'https://epic-bell-ae26f8.netlify.app/smvita-frontend/assets/img/slide/slide-3.jpg',
 ]
 

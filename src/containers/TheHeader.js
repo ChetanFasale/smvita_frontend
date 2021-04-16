@@ -22,7 +22,7 @@ import {
   CImg,
 } from "@coreui/react";
 import CIcon from "@coreui/icons-react";
-import "./navbar.css";
+// import "./navbar.css";
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from "react-bootstrap";
 
 // routes config
@@ -34,23 +34,45 @@ const TheHeader = () => {
   const [navbarText, setNavbarText] = useState(false);
 
   return (
-    <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto" id="nav-item">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Link</Nav.Link>
-      <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
+    <CNavbar expandable="sm" color="dark" sticky="true">
+      <CToggler inNavbar onClick={() => setIsOpen(!isOpen)} />
+      <CNavbarBrand>SMVITA</CNavbarBrand>
+      <CCollapse show={isOpen} navbar>
+        <CNavbarNav>
+          <CNavLink to="/">Home</CNavLink>
+          <CDropdown inNav>
+            <CDropdownToggle color="primary">Courses</CDropdownToggle>
+            <CDropdownMenu>
+              <CDropdownItem to="/courses">PG-DAC</CDropdownItem>
+              <CDropdownItem to="/courses">PG-DBDA</CDropdownItem>
+              <CDropdownItem to="/courses">MSCIT</CDropdownItem>
+            </CDropdownMenu>
+          </CDropdown>
+          <CNavLink to="/gallery">Gallery</CNavLink>
+          <CNavLink to="/about">About Us</CNavLink>
+          <CNavLink to="/contact">Contact Us</CNavLink>
+        </CNavbarNav>
+        <CNavbarNav className="ml-auto">
+          <CDropdown inNav>
+            <CDropdownToggle >Lang</CDropdownToggle>
+            <CDropdownMenu>
+              <CDropdownItem>EN</CDropdownItem>
+              <CDropdownItem>ES</CDropdownItem>
+              <CDropdownItem>RU</CDropdownItem>
+              <CDropdownItem>FA</CDropdownItem>
+            </CDropdownMenu>
+          </CDropdown>
+          <CDropdown inNav>
+            <CDropdownToggle >User</CDropdownToggle>
+            <CDropdownMenu>
+              <CDropdownItem>Account</CDropdownItem>
+              <CDropdownItem>Settings</CDropdownItem>
+            </CDropdownMenu>
+          </CDropdown>
+        </CNavbarNav>
+      </CCollapse>
+    </CNavbar>
+ 
   );
 };
 

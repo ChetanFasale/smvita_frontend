@@ -1,6 +1,7 @@
 import React from 'react'
 import YoutubePlayer from 'src/components/YoutubePlayer'
 import Carousel from './Carousel'
+import Newnavbar from "src/containers/Newnavbar";
 import {
   TheContent,
   // TheSidebar,
@@ -17,8 +18,8 @@ const TheLayout = () => {
     <div >
 
     <div className="wrapper">
-    <TheHeader/>
-    
+    {/* <TheHeader/> */}
+    <Newnavbar/>
     <TheContent/>
     </div>
     
